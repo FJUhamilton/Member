@@ -27,13 +27,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+    <Button
+        android:id="@+id/nickbtn"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/right_arrow"
+        android:onClick="nickbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nickname"
-        app:srcCompat="@drawable/right_arrow" />
+        app:layout_constraintTop_toBottomOf="@+id/nickname" />
 </androidx.constraintlayout.widget.ConstraintLayout>

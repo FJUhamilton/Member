@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(nickname!=null){
+        if(nickname!=null ){
             login = true ;
-        }else if (!login){
+        }
+        if (!login){
             Intent intent = new Intent(this,NicknameActivity.class);
             startActivityForResult(intent,RC_LOGIN);
         }

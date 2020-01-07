@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
         edname.setText(nickname);
         edage.setText(age);
         edgender.setText(gender);
-        if(nickname!=null ){
+        if(nickname!=null && age!= null && gender!= null ){
             login = true ;
         };
         if (!login){
             Intent intent1 = new Intent(this,NicknameActivity.class);
             startActivityForResult(intent1,RC_LOGIN);
         };
-        
+
     }
 }

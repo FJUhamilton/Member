@@ -19,13 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(nickname!=null ){
-            login = true ;
-        }
-        if (!login){
-            Intent intent = new Intent(this,NicknameActivity.class);
-            startActivityForResult(intent,RC_LOGIN);
-        }
         Intent intent = getIntent();
         nickname = intent.getStringExtra("nickname");
         age = intent.getStringExtra("age");
@@ -36,5 +29,13 @@ public class MainActivity extends AppCompatActivity {
         edname.setText(nickname);
         edage.setText(age);
         edgender.setText(gender);
+        if(nickname!=null ){
+            login = true ;
+        };
+        if (!login){
+            Intent intent1 = new Intent(this,NicknameActivity.class);
+            startActivityForResult(intent1,RC_LOGIN);
+        };
+        
     }
 }
